@@ -26,6 +26,10 @@ body {
     --sidebar-bg-color: #ffffff;
     --profile-card-bg-color: #ffffff;
     --primary-btn-bg-color: #ffa500;
+    --fcard-bg-color:#1e1e1e;
+    --fcard-header-color:#333;
+    --box-shadow:0 4px 12px rgba(0, 0, 0, 0.5);
+    
 }
 
 /* Dark Mode Styles */
@@ -37,6 +41,12 @@ body {
     --sidebar-bg-color: #1c1c1c;
     --profile-card-bg-color: #ffffff;
     --primary-btn-bg-color: #ffa500;
+    --fcard-bg-color:#1e1e1e;
+    --fcard-header-color:#333;
+    --box-shadow:0 4px 12px rgba(0, 0, 0, 0.5);
+
+
+
 }
 
 /* Apply the colors */
@@ -50,6 +60,10 @@ body {
     color: var(--primary-text-color);
 }
 
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
 /* Container for the entire page */
 .container1 {
     display: flex;
@@ -145,6 +159,9 @@ body {
 }
 
 /* Social Media Icons */
+.fa-sun{
+    color: #ffbd2e;
+}
 .social-container {
     display: flex;
     justify-content: center;
@@ -220,7 +237,7 @@ body {
 /*----text editor----*/
 .editor-window {
     width: auto;
-    background-color: #1e1e1e;
+    background-color: var(--fcard-bg-color);
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     font-family: 'Fira Code', monospace;
@@ -231,7 +248,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: var(--fcard-header-color);
     padding: 10px;
     border-radius: 8px 8px 0 0;
 }
@@ -254,12 +271,12 @@ body {
 
 .editor-title {
     font-size: 0.9em;
-    color: #d4d4d4;
+    color: var(--secondary-text-color);
 }
 
 .editor-body {
     padding: 20px;
-    background-color: #1e1e1e;
+    background-color: var(--fcard-bg-color);
     border-radius: 0 0 8px 8px;
 }
 
@@ -320,6 +337,65 @@ body {
     color: var(--secondary-text-color);
 }
 
+
+/*----------notion----------*/
+.about-me{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    /* color: var(--primary-text-color); */
+    height: 100vh;
+}
+.notion-card {
+    min-height: 40vh;
+    width: auto;
+    background-color: var(--content-bg-color);
+    color: var(--primary-text-color);
+    border-radius: 8px;
+    border: 2px solid #c5c1c1;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+  }
+  
+.notion-header h3 {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+  }
+  
+.notion-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 15px 0 0;
+  }
+  
+.notion-content strong {
+    color: #2f54eb;
+  }
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .primary-button {
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  .primary-button:hover {
+    background-color: #45A049;
+  }
+/*----------notion----------*/
 
 
 
