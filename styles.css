@@ -14,13 +14,14 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
+    background-color: var(--bg-color);
 }
 
 /* Light Mode Styles */
 .light-mode {
     --primary-text-color: #333333; /* Primary text color in light mode */
     --secondary-text-color: #777777; /* Secondary text color in light mode */
-    --third-text-color:#ffa500
+    --third-text-color:#ffa500;
     --bg-color: #ffffff;
     --content-bg-color: #ffffff;
     --sidebar-bg-color: #ffffff;
@@ -56,18 +57,9 @@ body {
 }
 
 .content {
-    background-color: var(--content-bg-color);
+    background-color: var(--bg-color);
     color: var(--primary-text-color);
 }
-.section {
-    padding: 20px;
-}
-@media (max-width: 768px) {
-    .section {
-      margin-top: 40px; /* Larger gap for mobile view */
-    }
-  }
-
 .button-container {
     text-align: center;
     margin-top: 20px;
@@ -76,6 +68,7 @@ body {
 .container1 {
     display: flex;
     min-height: 100vh; /* Full height */
+    background-color: var(--bg-color);
 }
 
 /* Sidebar */
@@ -95,6 +88,7 @@ body {
     margin-left: 30%;
     padding: 20px;
     width: 70%;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
@@ -107,11 +101,17 @@ body {
     .content {
         margin-left: 0; /* Remove left margin for mobile view */
         width: 100%; /* Full width */
+        margin-bottom: 20px;
     }
 
     .container1 {
         flex-direction: column; /* Stack the container elements */
         margin: 0; /* Reset margin to avoid whitespace issues */
+        margin-bottom: 20px;
+    }
+    .hero{
+        display: flex;
+        margin-bottom: 20px;
     }
 }
 
@@ -240,7 +240,7 @@ body {
     flex-direction: column;
     padding: 10px;
     color: var(--primary-text-color);
-    height: 100vh;
+    min-height: 100vh;
 }
 /*----text editor----*/
 .editor-window {
@@ -353,7 +353,7 @@ body {
     flex-direction: column;
     padding: 10px;
     /* color: var(--primary-text-color); */
-    height: 100vh;
+    min-height: 100vh;
     margin-bottom: 20px;
 }
 .notion-card {
@@ -388,8 +388,18 @@ body {
     color: #2f54eb;
   }
   .button-container {
+    /* display: flex;
+    flex-direction: column; */
     text-align: center;
     margin-top: 20px;
+    align-items: center;
+  }
+  @media (max-width: 768px) {
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        
+      }
   }
   .primary-button {
     font-size: 18px;
@@ -407,7 +417,3 @@ body {
     background-color: #45A049;
   }
 /*----------notion----------*/
-
-
-
-  
