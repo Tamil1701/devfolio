@@ -59,6 +59,14 @@ body {
     background-color: var(--content-bg-color);
     color: var(--primary-text-color);
 }
+.section {
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    .section {
+      margin-bottom: 40px; /* Larger gap for mobile view */
+    }
+  }
 
 .button-container {
     text-align: center;
