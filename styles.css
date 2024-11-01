@@ -64,7 +64,7 @@ body {
 }
 @media (max-width: 768px) {
     .section {
-      margin-bottom: 40px; /* Larger gap for mobile view */
+      margin-top: 40px; /* Larger gap for mobile view */
     }
   }
 
@@ -250,6 +250,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     font-family: 'Fira Code', monospace;
     color: #d4d4d4;
+    margin-bottom: 20px;
 }
 
 .editor-header {
@@ -353,6 +354,7 @@ body {
     padding: 10px;
     /* color: var(--primary-text-color); */
     height: 100vh;
+    margin-bottom: 20px;
 }
 .notion-card {
     min-height: 40vh;
@@ -363,6 +365,7 @@ body {
     border: 2px solid #c5c1c1;
     box-shadow: var(--box-shadow);
     padding: 20px;
+    margin-bottom: 20px;
   }
   
 .notion-header h3 {
