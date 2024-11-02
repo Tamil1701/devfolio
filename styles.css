@@ -16,20 +16,23 @@ body {
     line-height: 1.6;
     background-color: var(--bg-color);
 }
+:root{
+    --font-cur: 'Pacifico', cursive;
+}
 
 /* Light Mode Styles */
 .light-mode {
     --primary-text-color: #333333; /* Primary text color in light mode */
     --secondary-text-color: #777777; /* Secondary text color in light mode */
     --third-text-color:#ffa500;
-    --bg-color: #F9F9F8;
+    --bg-color: #FAFAFA;
     --content-bg-color: #ffffff;
-    --sidebar-bg-color: #F9F9F8;
     --profile-card-bg-color: #ffffff;
     --primary-btn-bg-color: #ffa500;
     --fcard-bg-color:#1e1e1e;
     --fcard-header-color:#333;
     --box-shadow:0 4px 12px rgba(0, 0, 0, 0.5);
+    --card-border: 2px solid #000000;
     
 }
 
@@ -37,9 +40,10 @@ body {
 .dark-mode {
     --primary-text-color: #f5f5f5; /* Primary text color in dark mode */
     --secondary-text-color: #a09898; /* Secondary text color in dark mode */
-    --bg-color: #1c1c1c;
+    --bg-color: #000119;
     --content-bg-color: #1c1c1c;
-    --sidebar-bg-color: #1c1c1c;
+    --card-border: 2px solid #c5c1c1;
+    
     --profile-card-bg-color: #ffffff;
     --primary-btn-bg-color: #ffa500;
     --fcard-bg-color:#1e1e1e;
@@ -55,6 +59,12 @@ body {
     background-color: var(--bg-color);
     color: var(--primary-text-color);
 }
+
+/* menu */
+
+
+
+/* menu */
 
 .content {
     background-color: var(--bg-color);
@@ -80,7 +90,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--sidebar-bg-color);
+    background-color: var(--bg-color);
 }
 
 /* Main content area */
@@ -127,7 +137,7 @@ body {
     padding: 40px;
     background-color: var(--bg-color);
     border: 1px solid #ffffff40;
-    box-shadow: #ff5f56 0px 0px 0px 2px inset, var(--sidebar-bg-color) 10px -10px 0px -3px, #ffbd2e 10px -10px, var(--sidebar-bg-color) 20px -20px 0px -3px, #27c93f 20px -20px;
+    box-shadow: #ff5f56 0px 0px 0px 2px inset, var(--bg-color) 10px -10px 0px -3px, #ffbd2e 10px -10px, var(--bg-color) 20px -20px 0px -3px, #27c93f 20px -20px;
 }
 
 .image {
@@ -240,7 +250,7 @@ body {
     flex-direction: column;
     padding: 10px;
     color: var(--primary-text-color);
-    min-height: 100vh;
+    min-height: 70vh;
 }
 /*----text editor----*/
 .editor-window {
@@ -362,16 +372,16 @@ body {
 .notion-card {
     min-height: 40vh;
     width: auto;
-    background-color: var(--content-bg-color);
+    background-color: var(--bg-color);
     color: var(--primary-text-color);
     border-radius: 8px;
-    border: 2px solid #c5c1c1;
+    border: var(--card-border);
     box-shadow: var(--box-shadow);
     padding: 20px;
     margin-bottom: 20px;
   }
   
-.notion-card-profile {
+/* .notion-card-profile {
     min-height: 30vh;
     width: fit-content;
     background-color: var(--content-bg-color);
@@ -381,13 +391,13 @@ body {
     box-shadow: var(--box-shadow);
     padding: 20px;
     margin-bottom: 20px;
-  }
+  } */
 .notion-header h3 {
     font-size: 1.4em;
     font-weight: 600;
     margin: 0;
     padding-bottom: 8px;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: var(--card-border);
     display: flex;
     align-items: center;
   }
@@ -494,6 +504,9 @@ body {
 }
 
   /* Individual skill card styling */
+
+
+
   .skill-card {
     display: flex;
     align-items: center;
@@ -502,7 +515,7 @@ body {
     height: 80px;
     width: 250px;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: #FAFAFA;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, background-color 0.3s;
   }
@@ -548,3 +561,151 @@ body {
       transform: translateX(-50%);
     }
   }
+
+  /*----------------------------------------------*/
+  .notion-profile-card-container {
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  .notion-profile-card {
+    background-color: var(--bg-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: var(--card-border);
+    box-shadow: var(--box-shadow);
+    
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .notion-profile-card h2 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-text-color);
+    border-bottom: var(--card-border);
+
+  }
+  
+  .notion-profile-card img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .notion-profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow);
+  }
+  
+  /* Popup Styles */
+.notion-profile-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Apply Gaussian blur */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s;
+    z-index: 1000;
+  }
+  
+  .notion-profile-popup-content {
+    background: var(--bg-color);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    border: var(--card-border);
+    box-shadow: var(--box-shadow);
+    transform: translateY(-20px);
+    transition: transform 0.3s;
+  }
+  
+  .notion-profile-popup p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .notion-profile-popup button {
+    padding: 0.5rem 1.5rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .notion-profile-popup button:hover {
+    background-color: #0056b3;
+  }
+  
+  .notion-profile-popup-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* Show popup */
+  .notion-profile-popup.show {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .notion-profile-popup-content.show {
+    transform: translateY(0);
+  }
+  
+  /* Responsive adjustments */
+  @media (min-width: 768px) {
+    .notion-profile-card-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .notion-profile-card-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+
+  /* ----------------------------- */
+
+  .hidden {
+    opacity: 0;
+}
+
+.console-container {
+    font-family: var(--font-cur); /* Ensure font is available */
+    font-size: 2.5em; /* You can adjust the size */
+    /* text-align: center; */
+    height: auto; /* Adjust the height as needed */
+    width: auto; /* Adjust the width as needed */
+    display: block;
+    position: relative; /* Changed to relative */
+    color: var(--third-text-color); /* Default text color */
+    margin-bottom: 10px;
+}
+
+.console-underscore {
+    display: inline-block;
+    position: relative;
+    top: -0.14em;
+    left: 10px;
+    color: white; /* Default color for underscore */
+}

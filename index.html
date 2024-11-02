@@ -110,6 +110,43 @@
             
 
             </div>
+            <div class="notion-profile-card-container">
+              <div class="notion-profile-card" onclick="openPopup('https://www.example1.com')">
+                <h2>Platform 1</h2>
+                <img src="https://example.com/icon1.png" alt="Platform 1 Icon">
+              </div>
+              <div class="notion-profile-card" onclick="openPopup('https://www.example2.com')">
+                <h2>Platform 2</h2>
+                <img src="https://example.com/icon2.png" alt="Platform 2 Icon">
+              </div>
+              <div class="notion-profile-card" onclick="openPopup('https://www.example3.com')">
+                <h2>Platform 3</h2>
+                <img src="https://example.com/icon3.png" alt="Platform 3 Icon">
+              </div>
+              <div class="notion-profile-card" onclick="openPopup('https://www.example1.com')">
+                <h2>Platform 1</h2>
+                <img src="https://example.com/icon1.png" alt="Platform 1 Icon">
+              </div>
+              <div class="notion-profile-card" onclick="openPopup('https://www.example2.com')">
+                <h2>Platform 2</h2>
+                <img src="https://example.com/icon2.png" alt="Platform 2 Icon">
+              </div>
+              <div class="notion-profile-card" onclick="openPopup('https://www.example3.com')">
+                <h2>Platform 3</h2>
+                <img src="https://example.com/icon3.png" alt="Platform 3 Icon">
+              </div>
+              <!-- Add more cards as needed -->
+            </div>
+            
+            <!-- Custom Popup -->
+            <div class="notion-profile-popup" id="notionProfilePopup">
+              <div class="notion-profile-popup-content">
+                <span class="notion-profile-popup-close" onclick="closePopup()">✖</span>
+                <p>🚀 Ready to explore? Click "Yes" to open the link!</p>
+                <button onclick="redirect()">Yes</button>
+                <button onclick="closePopup()">Cancel</button>
+              </div>
+            </div>
             
 
             
@@ -118,41 +155,49 @@
             
         </section>
         <section class="skills">
+          <div class='console-container'>
+            <span id='text'></span>
+            <div class='console-underscore' id='console'>&#95;</div>
+        </div>
+          
+          
+        
+          
               <div class="wrapper">
                 
             
                 <div class="marquee">
                   <div class="marquee__group">
                     <div class="skill-card">
-                      <svg aria-hidden="true"><rect width="24" height="24" fill="#4CAF50"/></svg>
-                      <p>Skill: Python</p>
+                      <img src="https://skillicons.dev/icons?i=git&theme=light" alt="Icons for Git" width="50" height="50" style="border-radius: 5px;" />
+                      <p>Git</p>
                     </div>
                     <div class="skill-card">
-                      <svg aria-hidden="true"><rect width="24" height="24" fill="#FFC107"/></svg>
-                      <p>Skill: JavaScript</p>
+                      <img src="https://skillicons.dev/icons?i=github&theme=light" alt="Icons for github" width="50" height="50" style="border-radius: 5px;" />
+                      <p>Github</p>
                     </div>
                     <div class="skill-card">
-                      <svg aria-hidden="true"><rect width="24" height="24" fill="#2196F3"/></svg>
-                      <p>Skill: Power BI</p>
+                      <img src="https://skillicons.dev/icons?i=azure&theme=light" alt="Icons for azure" width="50" height="50" style="border-radius: 5px;" />
+                      <p>Azure</p>
                     </div>
                     <div class="skill-card">
-                      <svg aria-hidden="true"><rect width="24" height="24" fill="#FF5722"/></svg>
+                      <img src="https://skillicons.dev/icons?i=git" alt="Icons for Git" width="50" height="50" style="border-radius: 5px;" />
                       <p>Skill: Java</p>
                     </div>
                     <div class="skill-card">
-                      <svg aria-hidden="true"><rect width="24" height="24" fill="#9C27B0"/></svg>
+                      <img src="https://skillicons.dev/icons?i=git" alt="Icons for Git" width="50" height="50" style="border-radius: 5px;" />
                       <p>Skill: MySQL</p>
                     </div>
                     <div class="skill-card">
-                      <svg aria-hidden="true"><rect width="24" height="24" fill="#009688"/></svg>
+                      <img src="https://skillicons.dev/icons?i=git" alt="Icons for Git" width="50" height="50" style="border-radius: 5px;" />
                       <p>Skill: HTML & CSS</p>
                     </div>
                     <div class="skill-card">
-                      <svg aria-hidden="true"><rect width="24" height="24" fill="#607D8B"/></svg>
+                      <img src="https://skillicons.dev/icons?i=git" alt="Icons for Git" width="50" height="50" style="border-radius: 5px;" />
                       <p>Skill: Azure DevOps</p>
                     </div>
                     <div class="skill-card">
-                      <svg aria-hidden="true"><rect width="24" height="24" fill="#795548"/></svg>
+                      <img src="https://skillicons.dev/icons?i=git" alt="Icons for Git" width="50" height="50" style="border-radius: 5px;" />
                       <p>Skill: GitHub</p>
                     </div>
                   </div>
@@ -220,6 +265,7 @@
             
         </main>
     </div>
+    
 
     <script src="script.js"></script>
 </body>
