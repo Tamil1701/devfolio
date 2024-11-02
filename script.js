@@ -22,54 +22,6 @@ toggleButton.addEventListener('click', () => {
 });
 
 
-
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     const profileCard = document.querySelector('.profile-card');
-//     const customCursor = document.createElement('div');
-//     customCursor.classList.add('custom-cursor');
-
-//     // Append the custom cursor to the body
-//     document.body.appendChild(customCursor);
-
-//     // Update cursor position
-//     document.addEventListener('mousemove', function(e) {
-//         customCursor.style.top = `${e.clientY}px`;
-//         customCursor.style.left = `${e.clientX}px`;
-//     });
-
-//     // Show custom cursor on profile card hover
-//     profileCard.addEventListener('mouseenter', function() {
-//         customCursor.style.display = 'block';
-//     });
-
-//     // Hide custom cursor when leaving profile card
-//     profileCard.addEventListener('mouseleave', function() {
-//         customCursor.style.display = 'none';
-//     });
-
-//     // Initially hide the cursor
-//     customCursor.style.display = 'none';
-// });
-
-
-/*counters*/
-$(document).ready(function() {
-
-    $('.counter').each(function () {
-$(this).prop('Counter',0).animate({
-    Counter: $(this).text()
-}, {
-    duration: 4000,
-    easing: 'swing',
-    step: function (now) {
-        $(this).text(Math.ceil(now));
-    }
-});
-});
-
-});  
-
 function toggleReadMore() {
     const extraInfo = document.getElementById("extra-info");
     const readMoreLink = document.getElementById("read-more");
@@ -83,4 +35,14 @@ function toggleReadMore() {
     }
 }
 
-  
+
+
+// const directionToggle = document.getElementById('direction-toggle');
+//     const marquee = document.querySelector('.marquee');
+
+//     let reverse = false;
+
+//     directionToggle.addEventListener('click', () => {
+//       reverse = !reverse;
+//       marquee.classList.toggle('marquee--reverse', reverse);
+//     });
