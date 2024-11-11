@@ -485,7 +485,7 @@ body {
 
   .marquee__group {
     display: flex;
-    animation: scroll 25s linear infinite;
+    animation: scroll linear infinite;
     gap: 20px;
     margin-bottom: 10px;
   }
@@ -495,7 +495,7 @@ body {
 
   .marquee__group2 {
     display: flex;
-    animation: scroll 25s linear infinite reverse;
+    animation: scroll  linear infinite reverse;
     gap: 20px;
   }
 
