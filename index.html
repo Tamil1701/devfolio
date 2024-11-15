@@ -11,6 +11,47 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css'>
 </head>
 <body class="dark-mode">
+    <!-- Popup Container -->
+    <div id="popup" style="
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(10px); 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    z-index: 1000;">
+    
+    <div style="
+      background: #fff; 
+      padding: 20px; 
+      border-radius: 10px; 
+      text-align: center; 
+      max-width: 400px; 
+      width: 90%; 
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+      
+      <div style="width: 100%; max-width: 200px; margin: 0 auto;">
+        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_jtkhplop.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+      </div>
+
+      <h2 style="margin: 20px 0 10px; color: #333;">Under Construction 🚧</h2>
+      <p style="margin: 0; color: #666;">We're currently updating the website. Some data may be missing temporarily.</p>
+      <button onclick="closePopup()" style="
+        margin-top: 20px; 
+        padding: 10px 20px; 
+        background-color: #007BFF; 
+        color: white; 
+        border: none; 
+        border-radius: 5px; 
+        cursor: pointer;">
+        Got it!
+      </button>
+    </div>
+  </div>
     <div class="container1">
         <!-- Sidebar -->
         <aside class="sidebar1">
@@ -301,13 +342,22 @@
             
         </main>
     </div>
-    <a href="web-ar-project.html">
-      <button class="btn btn-light mt-4">
-        <i id="mode-icon" class="fas fa-sun"></i> AR
-      </button>
-    </a>
+   
     
 
     <script src="script.js"></script>
+    <!-- // remove on updating the website -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script>
+    // Function to close the popup
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+
+    // Show popup on page load
+    window.onload = function () {
+      document.getElementById('popup').style.display = 'flex';
+    };
+  </script>
 </body>
 </html>
