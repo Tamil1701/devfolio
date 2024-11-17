@@ -11,47 +11,19 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css'>
 </head>
 <body class="dark-mode">
-    <!-- Popup Container -->
-    <div id="popup" style="
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
-    background: rgba(0, 0, 0, 0.5); 
-    backdrop-filter: blur(10px); 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    z-index: 1000;">
-    
-    <div style="
-      background: #fff; 
-      padding: 20px; 
-      border-radius: 10px; 
-      text-align: center; 
-      max-width: 400px; 
-      width: 90%; 
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
-      
-      <div style="width: 100%; max-width: 200px; margin: 0 auto;">
-        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_jtkhplop.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+  <!-- temp pop up -->
+  <div class="temp-name">
+    <div class="temp-popup-content">
+      <div class="temp-animation-container">
+        <lottie-player src="animations/uc.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
       </div>
 
-      <h2 style="margin: 20px 0 10px; color: #333;">Under Construction 🚧</h2>
-      <p style="margin: 0; color: #666;">We're currently updating the website. Some data may be missing temporarily.</p>
-      <button onclick="closePopup()" style="
-        margin-top: 20px; 
-        padding: 10px 20px; 
-        background-color: #007BFF; 
-        color: white; 
-        border: none; 
-        border-radius: 5px; 
-        cursor: pointer;">
-        Got it!
-      </button>
+      <h2 class="temp-heading">Under Construction 🚧</h2>
+      <p class="temp-message">We're currently updating the website. Some data may be missing temporarily.</p>
+      <button onclick="tempclosePopup()" class="temp-close-button">Got it!</button>
     </div>
   </div>
+  <!-- temp pop up -->
     <div class="container1">
         <!-- Sidebar -->
         <aside class="sidebar1">
@@ -80,7 +52,7 @@
                         <i class="fas fa-mobile-alt"></i>
                     </a>
                 </div>
-                <button id="mode-toggle" class="btn btn-light mt-4">
+                <button id="mode-toggle" class="btn btn-light mt-4" style="display: none">
                     <i id="mode-icon" class="fas fa-sun"></i> Switch to Light Mode
                 </button>
             </div>
@@ -91,8 +63,10 @@
         <main class="content">
           <section class="hero">
             <div class="intro-message">
-              <span class="emoji">👋</span> Hey! I am <span class="gradient-text">Tamilarasan</span>, 
-              a Software Developer and Tech Consultant.
+              <span class="line-1">SOFTWARE ENGINEER</span>
+              <br>
+              <span class="line-2" style="text-underline-position: below;">AND CONSULTANT</span><span style="color: orange;">.</span>
+              
           </div>
           <div class="editor-container">
             <div class="editor-window">
@@ -152,29 +126,29 @@
 
             </div>
             <div class="notion-profile-card-container">
-              <div class="notion-profile-card" onclick="openPopup('https://www.example1.com')">
-                <h2>Platform 1</h2>
-                <img src="https://example.com/icon1.png" alt="Platform 1 Icon">
+              <div class="notion-profile-card" onclick="openPopup('https://leetcode.com/u/tamilarasanselvam1701/')">
+                <h2>LeetCode</h2>
+                <img src="images/platforms/leetcode.png" alt="LeetCode">
               </div>
-              <div class="notion-profile-card" onclick="openPopup('https://www.example2.com')">
-                <h2>Platform 2</h2>
-                <img src="https://example.com/icon2.png" alt="Platform 2 Icon">
+              <div class="notion-profile-card" onclick="openPopup('https://www.geeksforgeeks.org/user/tamilarasanmmyl/')">
+                <h2>Geeks For Geeks</h2>
+                <img src="images/platforms/geeks forgeeks.png" alt="Geeks for Geeks">
               </div>
-              <div class="notion-profile-card" onclick="openPopup('https://www.example3.com')">
-                <h2>Platform 3</h2>
-                <img src="https://example.com/icon3.png" alt="Platform 3 Icon">
+              <div class="notion-profile-card" onclick="openPopup('https://www.hackerrank.com/profile/tamilarasanselv3')">
+                <h2>Hacker Rank</h2>
+                <img src="images/platforms/hacker-rank.png" alt="Hacker Rank">
               </div>
-              <div class="notion-profile-card" onclick="openPopup('https://www.example1.com')">
-                <h2>Platform 1</h2>
-                <img src="https://example.com/icon1.png" alt="Platform 1 Icon">
+              <div class="notion-profile-card" onclick="openPopup('https://www.novypro.com/profile_about/tamilarasan-s')">
+                <h2>NovyPro</h2>
+                <img src="images/platforms/novypro.png" alt="NovyPro">
               </div>
-              <div class="notion-profile-card" onclick="openPopup('https://www.example2.com')">
-                <h2>Platform 2</h2>
-                <img src="https://example.com/icon2.png" alt="Platform 2 Icon">
+              <div class="notion-profile-card" onclick="openPopup('https://www.novypro.com/profile_about/tamilarasan-s')">
+                <h2>Dribble</h2>
+                <img src="images/platforms/dribble.png" alt="Dribble">
               </div>
-              <div class="notion-profile-card" onclick="openPopup('https://www.example3.com')">
-                <h2>Platform 3</h2>
-                <img src="https://example.com/icon3.png" alt="Platform 3 Icon">
+              <div class="notion-profile-card" onclick="openPopup('https://medium.com/@tamilarasanselvam1701')">
+                <h2>Medium</h2>
+                <img src="images/platforms/Medium.png" alt="Medium">
               </div>
               <!-- Add more cards as needed -->
             </div>
@@ -196,10 +170,15 @@
             
         </section>
         <section class="skills">
-          <div class='console-container'>
+          <div class="intro-message">
+            <span class="line-1">SKILL</span>
+            
+            <span class="line-2">SET</span><span style="color: orange;">.</span>
+        </div>
+          <!-- <div class='console-container'>
             <span id='text'></span>
             <div class='console-underscore' id='console'>&#95;</div>
-        </div>
+        </div> -->
           
           
         
@@ -210,60 +189,80 @@
                 <div class="marquee">
                   <div class="marquee__group">
                     <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=java&theme=light" alt="Java" width="50" height="50" style="border-radius: 5px;" />
+                      <img src="https://skillicons.dev/icons?i=java" alt="Java" width="50" height="50" style="border-radius: 5px;" />
                       <p>Java</p>
                     </div>
                     <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=py&theme=light" alt="Python" width="50" height="50" style="border-radius: 5px;" />
+                      <img src="https://skillicons.dev/icons?i=py" alt="Python" width="50" height="50" style="border-radius: 5px;" />
                       <p>Python</p>
                     </div>
                     <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=c&theme=light" alt="C" width="50" height="50" style="border-radius: 5px;" />
+                      <img src="https://skillicons.dev/icons?i=c" alt="C" width="50" height="50" style="border-radius: 5px;" />
                       <p>C</p>
                     </div>
                     <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=php&theme=light" alt="PHP" width="50" height="50" style="border-radius: 5px;" />
+                      <img src="https://skillicons.dev/icons?i=php" alt="PHP" width="50" height="50" style="border-radius: 5px;" />
                       <p>PHP</p>
                     </div>
                     <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=laravel&theme=light" alt="Laravel" width="50" height="50" style="border-radius: 5px;" />
+                      <img src="https://skillicons.dev/icons?i=laravel" alt="Laravel" width="50" height="50" style="border-radius: 5px;" />
                       <p>Laravel</p>
                     </div>
                     <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=flask&theme=light" alt="Flask" width="50" height="50" style="border-radius: 5px;" />
+                      <img src="https://skillicons.dev/icons?i=flask" alt="Flask" width="50" height="50" style="border-radius: 5px;" />
                       <p>Flask</p>
                     </div>
                     <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=django&theme=light" alt="Django" width="50" height="50" style="border-radius: 5px;" />
+                      <img src="https://skillicons.dev/icons?i=django" alt="Django" width="50" height="50" style="border-radius: 5px;" />
                       <p>Django</p>
                     </div>
                     <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=sqlite&theme=light" alt="Sqlite" width="50" height="50" style="border-radius: 5px;" />
+                      <img src="https://skillicons.dev/icons?i=sqlite" alt="Sqlite" width="50" height="50" style="border-radius: 5px;" />
                       <p>Sqlite</p>
                     </div>
                     <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=mysql&theme=light" alt="Mysql" width="50" height="50" style="border-radius: 5px;" />
+                      <img src="https://skillicons.dev/icons?i=mysql" alt="Mysql" width="50" height="50" style="border-radius: 5px;" />
                       <p>Mysql</p>
                     </div>
                     <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=html&theme=light" alt="Html" width="50" height="50" style="border-radius: 5px;" />
+                      <img src="https://skillicons.dev/icons?i=html" alt="Html" width="50" height="50" style="border-radius: 5px;" />
                       <p>Html</p>
                     </div>
                     <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=css&theme=light" alt="CSS" width="50" height="50" style="border-radius: 5px;" />
+                      <img src="https://skillicons.dev/icons?i=css" alt="CSS" width="50" height="50" style="border-radius: 5px;" />
                       <p>CSS</p>
                     </div>
                     <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=js&theme=light" alt="js" width="50" height="50" style="border-radius: 5px;" />
+                      <img src="https://skillicons.dev/icons?i=js" alt="js" width="50" height="50" style="border-radius: 5px;" />
                       <p>js</p>
                     </div>
                     <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=npm&theme=light" alt="npm" width="50" height="50" style="border-radius: 5px;" />
+                      <img src="https://skillicons.dev/icons?i=npm" alt="npm" width="50" height="50" style="border-radius: 5px;" />
                       <p>npm</p>
                     </div>
                     <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=bootstrap&theme=light" alt="Bootstrap" width="50" height="50" style="border-radius: 5px;" />
+                      <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap" width="50" height="50" style="border-radius: 5px;" />
                       <p>Bootstrap</p>
+                    </div>
+                    <div class="skill-card">
+                      <img src="https://skillicons.dev/icons?i=java" alt="Java" width="50" height="50" style="border-radius: 5px;" />
+                      <p>Java</p>
+                    </div>
+                    <div class="skill-card">
+                      <img src="https://skillicons.dev/icons?i=py" alt="Python" width="50" height="50" style="border-radius: 5px;" />
+                      <p>Python</p>
+                    </div>
+                    <div class="skill-card">
+                      <img src="https://skillicons.dev/icons?i=c" alt="C" width="50" height="50" style="border-radius: 5px;" />
+                      <p>C</p>
+                    </div>
+                    <div class="skill-card">
+                      <img src="https://skillicons.dev/icons?i=php" alt="PHP" width="50" height="50" style="border-radius: 5px;" />
+                      <p>PHP</p>
+                    </div>
+                    <div class="skill-card">
+                      <img src="https://skillicons.dev/icons?i=laravel" alt="Laravel" width="50" height="50" style="border-radius: 5px;" />
+                      <p>Laravel</p>
                     </div>
                   </div>
 
@@ -274,49 +273,81 @@
                 <div class="marquee">
                     <div class="marquee__group2">
                       <div class="skill-card">
-                        <img src="https://skillicons.dev/icons?i=git&theme=light" alt="Icons for Git" width="50" height="50" style="border-radius: 5px;" />
-                        <p>Git</p>
-                      </div>
-                      <div class="skill-card">
-                        <img src="https://skillicons.dev/icons?i=github&theme=light" alt="Icons for github" width="50" height="50" style="border-radius: 5px;" />
-                        <p>Github</p>
-                      </div>
-                      <div class="skill-card">
-                        <img src="https://skillicons.dev/icons?i=azure&theme=light" alt="Icons for azure" width="50" height="50" style="border-radius: 5px;" />
-                        <p>Azure</p>
-                      </div>
-                      <div class="skill-card">
-                        <svg aria-hidden="true"><rect width="24" height="24" fill="#4CAF50"/></svg>
-                        <p>Skill: Python</p>
-                      </div>
-                      <div class="skill-card">
-                        <svg aria-hidden="true"><rect width="24" height="24" fill="#FFC107"/></svg>
-                        <p>Skill: JavaScript</p>
-                      </div>
-                      <div class="skill-card">
-                        <svg aria-hidden="true"><rect width="24" height="24" fill="#2196F3"/></svg>
-                        <p>Skill: Power BI</p>
-                      </div>
-                      <div class="skill-card">
-                        <svg aria-hidden="true"><rect width="24" height="24" fill="#FF5722"/></svg>
-                        <p>Skill: Java</p>
-                      </div>
-                      <div class="skill-card">
-                        <svg aria-hidden="true"><rect width="24" height="24" fill="#9C27B0"/></svg>
-                        <p>Skill: MySQL</p>
-                      </div>
-                      <div class="skill-card">
-                        <svg aria-hidden="true"><rect width="24" height="24" fill="#009688"/></svg>
-                        <p>Skill: HTML & CSS</p>
-                      </div>
-                      <div class="skill-card">
-                        <svg aria-hidden="true"><rect width="24" height="24" fill="#607D8B"/></svg>
-                        <p>Skill: Azure DevOps</p>
-                      </div>
-                      <div class="skill-card">
-                        <svg aria-hidden="true"><rect width="24" height="24" fill="#795548"/></svg>
-                        <p>Skill: GitHub</p>
-                      </div>
+                      <img src="https://skillicons.dev/icons?i=java" alt="Java" width="50" height="50" style="border-radius: 5px;" />
+                      <p>Java</p>
+                    </div>
+                    <div class="skill-card">
+                      <img src="https://skillicons.dev/icons?i=py" alt="Python" width="50" height="50" style="border-radius: 5px;" />
+                      <p>Python</p>
+                    </div>
+                    <div class="skill-card">
+                      <img src="https://skillicons.dev/icons?i=c" alt="C" width="50" height="50" style="border-radius: 5px;" />
+                      <p>C</p>
+                    </div>
+                    <div class="skill-card">
+                      <img src="https://skillicons.dev/icons?i=php" alt="PHP" width="50" height="50" style="border-radius: 5px;" />
+                      <p>PHP</p>
+                    </div>
+                    <div class="skill-card">
+                      <img src="https://skillicons.dev/icons?i=laravel" alt="Laravel" width="50" height="50" style="border-radius: 5px;" />
+                      <p>Laravel</p>
+                    </div>
+                    <div class="skill-card">
+                      <img src="https://skillicons.dev/icons?i=flask" alt="Flask" width="50" height="50" style="border-radius: 5px;" />
+                      <p>Flask</p>
+                    </div>
+                    <div class="skill-card">
+                      <img src="https://skillicons.dev/icons?i=django" alt="Django" width="50" height="50" style="border-radius: 5px;" />
+                      <p>Django</p>
+                    </div>
+                    <div class="skill-card">
+                      <img src="https://skillicons.dev/icons?i=sqlite" alt="Sqlite" width="50" height="50" style="border-radius: 5px;" />
+                      <p>Sqlite</p>
+                    </div>
+                    <div class="skill-card">
+                      <img src="https://skillicons.dev/icons?i=mysql" alt="Mysql" width="50" height="50" style="border-radius: 5px;" />
+                      <p>Mysql</p>
+                    </div>
+                    <div class="skill-card">
+                      <img src="https://skillicons.dev/icons?i=html" alt="Html" width="50" height="50" style="border-radius: 5px;" />
+                      <p>Html</p>
+                    </div>
+                    <div class="skill-card">
+                      <img src="https://skillicons.dev/icons?i=css" alt="CSS" width="50" height="50" style="border-radius: 5px;" />
+                      <p>CSS</p>
+                    </div>
+                    <div class="skill-card">
+                      <img src="https://skillicons.dev/icons?i=js" alt="js" width="50" height="50" style="border-radius: 5px;" />
+                      <p>js</p>
+                    </div>
+                    <div class="skill-card">
+                      <img src="https://skillicons.dev/icons?i=npm" alt="npm" width="50" height="50" style="border-radius: 5px;" />
+                      <p>npm</p>
+                    </div>
+                    <div class="skill-card">
+                      <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap" width="50" height="50" style="border-radius: 5px;" />
+                      <p>Bootstrap</p>
+                    </div>
+                    <div class="skill-card">
+                      <img src="https://skillicons.dev/icons?i=java" alt="Java" width="50" height="50" style="border-radius: 5px;" />
+                      <p>Java</p>
+                    </div>
+                    <div class="skill-card">
+                      <img src="https://skillicons.dev/icons?i=py" alt="Python" width="50" height="50" style="border-radius: 5px;" />
+                      <p>Python</p>
+                    </div>
+                    <div class="skill-card">
+                      <img src="https://skillicons.dev/icons?i=c" alt="C" width="50" height="50" style="border-radius: 5px;" />
+                      <p>C</p>
+                    </div>
+                    <div class="skill-card">
+                      <img src="https://skillicons.dev/icons?i=php" alt="PHP" width="50" height="50" style="border-radius: 5px;" />
+                      <p>PHP</p>
+                    </div>
+                    <div class="skill-card">
+                      <img src="https://skillicons.dev/icons?i=laravel" alt="Laravel" width="50" height="50" style="border-radius: 5px;" />
+                      <p>Laravel</p>
+                    </div>
                     </div>
   
                     <!-- Duplicate the marquee__group for infinite effect -->
@@ -346,18 +377,8 @@
     
 
     <script src="script.js"></script>
-    <!-- // remove on updating the website -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script>
-    // Function to close the popup
-    function closePopup() {
-      document.getElementById('popup').style.display = 'none';
-    }
 
-    // Show popup on page load
-    window.onload = function () {
-      document.getElementById('popup').style.display = 'flex';
-    };
-  </script>
+
 </body>
 </html>
