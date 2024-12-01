@@ -6,13 +6,21 @@
     <title>Tamilarasan</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+        <!-- Add Flowbite CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@1.5.2/dist/flowbite.min.css" rel="stylesheet" />
+
+    <!-- Add Flowbite JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@1.5.2/dist/flowbite.min.js"></script>
+
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css'>
 </head>
-<body class="dark-mode">
+<body>
   <!-- temp pop up -->
-  <div class="temp-name">
+  <!-- <div class="temp-name">
     <div class="temp-popup-content">
       <div class="temp-animation-container">
         <lottie-player src="animations/uc.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
@@ -22,7 +30,7 @@
       <p class="temp-message">We're currently updating the website. Some data may be missing temporarily.</p>
       <button onclick="tempclosePopup()" class="temp-close-button">Got it!</button>
     </div>
-  </div>
+  </div> -->
   <!-- temp pop up -->
     <div class="container1">
         <!-- Sidebar -->
@@ -36,339 +44,326 @@
                     <h2>Tamilarasan</h2>
                     <span>Software Developer and Consultant</span>
                 </div>
-                <a href="docs/tamilarasan_s_tamilarasanselvam1701_gmail_com_Microsoft_intern.pdf" class="btn btn-primary mt-4" download="Tamilarasan_Resume">Download CV</a>
+                <a href="docs/tamilarasan_s_tamilarasanselvam1701_gmail_com_Microsoft_intern.pdf" class="primary-button" download="Tamilarasan_Resume">Download CV</a>
                 <div class="social-container mt-4">
-                    <a href="https://www.linkedin.com" class="social-icon linkedin" target="_blank">
+                    <a href="https://www.linkedin.com/in/tamilarasan-selvam/" class="social-icon linkedin" target="_blank">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="https://github.com" class="social-icon github" target="_blank">
+                    <a href="https://github.com/Tamil1701" class="social-icon github" target="_blank">
                         <i class="fa-brands fa-github"></i>
                     </a>
-                    <a href="mailto:example@example.com" class="social-icon email">
+                    <a href="mailto:tamilarasanselvam1701@gmail.com" class="social-icon email">
                         <i class="fas fa-envelope"></i>
                     </a>
                     
-                    <a href="tel:+1234567890" class="social-icon mobile">
+                    <a href="tel:+91 9894410978" class="social-icon mobile">
                         <i class="fas fa-mobile-alt"></i>
                     </a>
                 </div>
-                <button id="mode-toggle" class="btn btn-light mt-4" style="display: none">
-                    <i id="mode-icon" class="fas fa-sun"></i> Switch to Light Mode
-                </button>
             </div>
 
         </aside>
 
         <!-- Main Content -->
         <main class="content">
-          <section class="hero">
-            <div class="intro-message">
-              <span class="line-1">SOFTWARE ENGINEER</span>
-              <br>
-              <span class="line-2" style="text-underline-position: below;">AND CONSULTANT</span><span style="color: orange;">.</span>
+          <section class=" py-16 hero">
+            <div class="max-w-4xl mx-auto text-left p-8">
+              <h1 class="text-5xl font-extrabold text-white leading-tight">
+                I am a <span class="text-blue-500">Software Engineer</span> <br> and <span class="text-blue-500">Consultant</span>
+              </h1>
+              <p class="mt-6 text-lg text-gray-400 leading-relaxed " id="intro">
+                
+                  👋 Hello! I am <span class="gradient-text" style="font-size: 1em;">Tamilarasan s</span> a final-year <strong>Computer Science and Engineering</strong> student with two years of experience in 
+                  <strong>software development</strong>, <strong>consulting</strong>, and <strong>data analytics</strong>. As a technology enthusiast and problem-solver, 
+                  I thrive in roles where I can blend technical skills with strategic thinking to solve real-world challenges.
+              </p>
+              <p class= "mt-6 text-lg text-gray-400 leading-relaxed" id="extra-info" style="display: none;">
+                  I have successfully led and collaborated on projects involving <strong>application management</strong>, <strong>process automation</strong>, and 
+                  <strong>data-driven insights</strong>, consistently delivering solutions that increase efficiency and impact. My ability to quickly 
+                  <strong>adapt</strong> and <strong>learn new technologies</strong> on demand has allowed me to contribute meaningfully in dynamic environments.
+                  With strengths in <strong>critical thinking</strong>, <strong>effective communication</strong>, and a <strong>collaborative approach</strong> to achieving results, I’m eager to 
+                  take on roles where I can help drive <strong>digital transformation</strong> and enhance business processes.
+                  Additionally, I have experience in project management and have worked with diverse teams to deliver high-quality solutions on time.
+                  My commitment to continuous learning has driven me to engage in various online courses and certifications.
+              </p>
+              <a href="#" id="read-more" onclick="toggleReadMore(); return false;">Read More</a>
               
+            </div>
+            <div class="button-container">
+              <a href="docs/tamilarasan_s_tamilarasanselvam1701_gmail_com_Microsoft_intern.pdf" class="primary-button">ATS-Friendly Resume</a>
+              <a href="docs/Tamilarasan.S_21CS844 (2).pdf" class="primary-button">Normal Resume</a>
           </div>
-          <div class="editor-container">
-            <div class="editor-window">
-                <div class="editor-header">
-                    <div class="buttons">
-                        <span class="close"></span>
-                        <span class="minimize"></span>
-                        <span class="maximize"></span>
-                    </div>
-                    <p class="editor-title">profile.js</p>
-                </div>
-                <div class="editor-body">
-                    <div class="executive-summary">
-                        <p><span class="command">import</span> <span class="variable">"Tamilarasan S"</span> <span class="comment">// Software Developer & Consultant</span></p>
-                        <p><span class="command">define</span> <span class="variable">skills</span> <span class="operator">=</span> <span class="string">["Java", "Python", "Power BI", "Azure DevOps"]</span>;</p>
-                        <p><span class="command">var</span> <span class="variable">experience</span> <span class="operator">=</span> <span class="string">"2 years of freelancing in tech consulting and development"</span>;</p>
-                        <p><span class="command">export</span> <span class="variable">summary</span> <span class="operator">=</span> <span class="string">"Driven problem-solver with a strong adaptability to new technologies."</span><span class="cursor-an">|</span></p>
-                    </div>
-                </div>
+          
+            
+          </section>
 
+        <section>
+          <div class="grid grid-cols-1 mt-4 md:grid-cols-3 gap-4">
+            <!-- Years of Experience -->
+            <div class="grid grid-cols-1 gap-4">
+              <div class="bento-g1 p-4 bg-opacity-75 rounded-lg shadow-md text-white">
+                <h2 class="text-lg font-bold">Years of Experience</h2>
+                <p class="text-2xl text-center font-semibold mt-2">2+</p>
+              </div>
+              <div class="bento-g1 p-4 bg-opacity-75 rounded-lg shadow-md text-white">
+                <h2 class="text-lg font-bold">Years of Experience</h2>
+                <p class="text-2xl text-center font-semibold mt-2">2+</p>
+              </div>
             </div>
-        </div>
-    
+          
+            <!-- My Skills -->
+            <div class="bento-g1 p-4 bg-opacity-75 rounded-lg shadow-md text-white">
+              <h2 class="text-lg font-bold mb-4">My Skills</h2>
+              <p align="center">
+                <a href="#">
+                  <img
+                    src="https://skillicons.dev/icons?i=bootstrap,css,django,figma,flask,html,java,js,linux,mysql,py,sklearn,sqlite,tailwind,vscode,wordpress&perline=4"
+                    alt="My Skills"
+                    class="w-full"
+                  />
+                </a>
+              </p>
+              <button onclick="toggleModal('skillsModal')" class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+                Show More
+              </button>
+            </div>
+          
+            <!-- Certifications Carousel -->
+            <div class="bento-g1 p-4 bg-opacity-75 rounded-lg shadow-md text-white">
+              <h2 class="text-lg font-bold mb-4">Certifications</h2>
+              <div class="scroll-container">
+                <div class="cert-item">
+                  <a href="https://app.hubspot.com/academy/achievements/ypk4tjlc/en/1/tamilarasan-selvam/digital-marketing" title="Digital Marketing">
+                    <img src="https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/c530562e23c942e48228f94b1d10603a.png" class="rounded w-full" alt="Digital Marketing">
+                  </a>
+                </div>
+            
+                <div class="cert-item">
+                  <a href="https://app.hubspot.com/academy/achievements/19c31mly/en/1/tamilarasan-selvam/seo" title="SEO">
+                    <img src="https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/d0020d6dd60f40b88ebbcbec06272ad1.png" class="rounded w-full" alt="SEO">
+                  </a>
+                </div>
+            
+                <div class="cert-item">
+                  <a href="https://app.hubspot.com/academy/achievements/7f6q8fwx/en/1/tamilarasan-selvam/inbound" title="Inbound">
+                    <img src="https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/8f8c05cc72434ea19fd54fd3a728576a.png" class="rounded w-full" alt="Inbound">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Second Row -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <!-- Education -->
+            <div class="bento-g1 p-4 bg-opacity-75 rounded-lg shadow-md text-white">
+              <h2 class="text-lg font-bold mb-4">Education</h2>
+              <p>
+                <strong>B.E. in Computer Science</strong><br />
+                Government College of Engineering, Tirunelveli<br />
+                2021-2025
+              </p>
+            </div>
+          
+            <!-- Projects -->
+            <div class="bento-g1 p-4 bg-opacity-75 rounded-lg shadow-md text-white">
+              <h2 class="text-lg font-bold mb-4">Projects</h2>
+              <ul class="list-disc ml-5">
+                <li>
+                  Spam Detection System 
+                  <button onclick="alert('Details about Spam Detection System')" class="ml-2 px-2 py-1 bg-gray-700 text-white rounded hover:bg-gray-800">
+                    Show More
+                  </button>
+                </li>
+                <li>
+                  AR Smart Home Model 
+                  <button onclick="alert('Details about AR Smart Home Model')" class="ml-2 px-2 py-1 bg-gray-700 text-white rounded hover:bg-gray-800">
+                    Show More
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Popup Modal -->
+          <div id="skillsModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+            <div class="bento-g1 w-96 text-center p-6 rounded-lg shadow-lg">
+              <h2 class="text-lg font-bold mb-4">All Skills</h2>
+              <p align="center">
+                <a href="#">
+                  <img
+                    src="https://skillicons.dev/icons?i=androidstudio,aws,bootstrap,css,django,docker,figma,firebase,flask,html,java,js,linux,mysql,nodejs,py,react,sklearn,sqlite,tailwind,vscode,wordpress&perline=5"
+                    alt="My Skills"
+                    class="w-full"
+                  />
+                </a>
+              </p>
+              <button onclick="toggleModal('skillsModal')" class="mt-4 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700">
+                Close
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container mx-auto px-4 py-8 space-y-6">
+            <!-- Card 1 -->
+            <article
+              class="w-full bg-gray-700 shadow-lg p-6 rounded-md transform hover:scale-105 duration-300 relative"
+            >
+              <a
+                href="https://example.com/project1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="absolute top-4 right-4 text-gray-300 hover:text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 6.75L6.75 17.25M6.75 6.75h10.5v10.5"
+                  />
+                </svg>
+              </a>
+              <div class="flex items-center">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  class="w-12 h-12 text-gray-300 bg-gray-600 rounded-full p-2"
+                >
+                  <path
+                    d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 5.5a1.5 1.5 0 1 1-1.5 1.5A1.5 1.5 0 0 1 12 7.5Zm1 9h-2v-4h2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <div class="ml-4">
+                  <h3 class="text-xl font-semibold text-gray-100">
+                    Vegro Ventures Pvt. Ltd.
+                  </h3>
+                  <p class="text-sm text-gray-400">May 2023 - August 2023 (4 months)</p>
+                </div>
+              </div>
+              <p class="text-gray-300 mt-2">
+                <span class="font-bold text-gray-100">Software Developer and Consultant:</span> 
+                Created scalable web solutions and managed digital marketing strategies to drive business growth.
+              </p>
+            </article>
+        
+            <!-- Card 2 -->
+            <article
+              class="w-full bg-gray-700 shadow-lg p-6 rounded-md transform hover:scale-105 duration-300 relative"
+            >
+              <a
+                href="https://example.com/project2"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="absolute top-4 right-4 text-gray-300 hover:text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 6.75L6.75 17.25M6.75 6.75h10.5v10.5"
+                  />
+                </svg>
+              </a>
+              <div class="flex items-center">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  class="w-12 h-12 text-gray-300 bg-gray-600 rounded-full p-2"
+                >
+                  <path
+                    d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 5.5a1.5 1.5 0 1 1-1.5 1.5A1.5 1.5 0 0 1 12 7.5Zm1 9h-2v-4h2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <div class="ml-4">
+                  <h3 class="text-xl font-semibold text-gray-100">
+                    Vegro VLearn
+                  </h3>
+                  <p class="text-sm text-gray-400">February 2024 - May 2024 (4 months)</p>
+                </div>
+              </div>
+              <p class="text-gray-300 mt-2">
+                <span class="font-bold text-gray-100">Platform Manager:</span> 
+                Managed and grew an edu-tech internship platform, onboarding 20+ students and evolving it into an internal training tool for strategic alignment.
+              </p>
+            </article>
+        
+            <!-- Card 3 -->
+            <article
+              class="w-full bg-gray-700 shadow-lg p-6 rounded-md transform hover:scale-105 duration-300 relative"
+            >
+              <a
+                href="https://example.com/project3"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="absolute top-4 right-4 text-gray-300 hover:text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 6.75L6.75 17.25M6.75 6.75h10.5v10.5"
+                  />
+                </svg>
+              </a>
+              <div class="flex items-center">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  class="w-12 h-12 text-gray-300 bg-gray-600 rounded-full p-2"
+                >
+                  <path
+                    d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 5.5a1.5 1.5 0 1 1-1.5 1.5A1.5 1.5 0 0 1 12 7.5Zm1 9h-2v-4h2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <div class="ml-4">
+                  <h3 class="text-xl font-semibold text-gray-100">
+                    Yuva Industries
+                  </h3>
+                  <p class="text-sm text-gray-400">August 2023 - October 2023 (3 months)</p>
+                </div>
+              </div>
+              <p class="text-gray-300 mt-2">
+                <span class="font-bold text-gray-100">Web Developer:</span> 
+                Developed and deployed dynamic web applications, ensuring quality and functionality for client satisfaction.
+              </p>
+            </article>
+          </div>
+        </section>
         
         
-        </section>
-        <section class="about-me">
-            <div class="ab-me">
-                <div class="notion-card">
-                    <div class="notion-header">
-                      <h3>📝 My Overview !</h3>
-                    </div>
-                    <div class="notion-content">
-                        <p id="intro">
-                            👋 Hello! I am <span class="gradient-text" style="font-size: 1em;">Tamilarasan s</span> a final-year <strong>Computer Science and Engineering</strong> student with two years of experience in 
-                            <strong>software development</strong>, <strong>consulting</strong>, and <strong>data analytics</strong>. As a technology enthusiast and problem-solver, 
-                            I thrive in roles where I can blend technical skills with strategic thinking to solve real-world challenges.
-                        </p>
-                        <p id="extra-info" style="display: none;">
-                            I have successfully led and collaborated on projects involving <strong>application management</strong>, <strong>process automation</strong>, and 
-                            <strong>data-driven insights</strong>, consistently delivering solutions that increase efficiency and impact. My ability to quickly 
-                            <strong>adapt</strong> and <strong>learn new technologies</strong> on demand has allowed me to contribute meaningfully in dynamic environments.
-                            With strengths in <strong>critical thinking</strong>, <strong>effective communication</strong>, and a <strong>collaborative approach</strong> to achieving results, I’m eager to 
-                            take on roles where I can help drive <strong>digital transformation</strong> and enhance business processes.
-                            Additionally, I have experience in project management and have worked with diverse teams to deliver high-quality solutions on time.
-                            My commitment to continuous learning has driven me to engage in various online courses and certifications.
-                        </p>
-                        <a href="#" id="read-more" onclick="toggleReadMore(); return false;">Read More</a>
-                        <div class="button-container">
-                            <a href="docs/tamilarasan_s_tamilarasanselvam1701_gmail_com_Microsoft_intern.pdf" class="primary-button">ATS-Friendly Resume</a>
-                            <a href="docs/Tamilarasan.S_21CS844 (2).pdf" class="primary-button">Normal Resume</a>
-                        </div>
-                    </div>
-                  </div>
-                
-            
-
-            </div>
-            <div class="notion-profile-card-container">
-              <div class="notion-profile-card" onclick="openPopup('https://leetcode.com/u/tamilarasanselvam1701/')">
-                <h2>LeetCode</h2>
-                <img src="images/platforms/leetcode.png" alt="LeetCode">
-              </div>
-              <div class="notion-profile-card" onclick="openPopup('https://www.geeksforgeeks.org/user/tamilarasanmmyl/')">
-                <h2>Geeks For Geeks</h2>
-                <img src="images/platforms/geeks forgeeks.png" alt="Geeks for Geeks">
-              </div>
-              <div class="notion-profile-card" onclick="openPopup('https://www.hackerrank.com/profile/tamilarasanselv3')">
-                <h2>Hacker Rank</h2>
-                <img src="images/platforms/hacker-rank.png" alt="Hacker Rank">
-              </div>
-              <div class="notion-profile-card" onclick="openPopup('https://www.novypro.com/profile_about/tamilarasan-s')">
-                <h2>NovyPro</h2>
-                <img src="images/platforms/novypro.png" alt="NovyPro">
-              </div>
-              <div class="notion-profile-card" onclick="openPopup('https://www.novypro.com/profile_about/tamilarasan-s')">
-                <h2>Dribble</h2>
-                <img src="images/platforms/dribble.png" alt="Dribble">
-              </div>
-              <div class="notion-profile-card" onclick="openPopup('https://medium.com/@tamilarasanselvam1701')">
-                <h2>Medium</h2>
-                <img src="images/platforms/Medium.png" alt="Medium">
-              </div>
-              <!-- Add more cards as needed -->
-            </div>
-            
-            <!-- Custom Popup -->
-            <div class="notion-profile-popup" id="notionProfilePopup">
-              <div class="notion-profile-popup-content">
-                <span class="notion-profile-popup-close" onclick="closePopup()">✖</span>
-                <p>🚀 Ready to explore? Click "Yes" to open the link!</p>
-                <button onclick="redirect()">Yes</button>
-                <button onclick="closePopup()">Cancel</button>
-              </div>
-            </div>
-            
-
-            
-            
-           
-            
-        </section>
-        <section class="skills">
-          <div class="intro-message">
-            <span class="line-1">SKILL</span>
-            
-            <span class="line-2">SET</span><span style="color: orange;">.</span>
-        </div>
-          <!-- <div class='console-container'>
-            <span id='text'></span>
-            <div class='console-underscore' id='console'>&#95;</div>
-        </div> -->
-          
-          
         
-          
-              <div class="wrapper">
-                
-            
-                <div class="marquee">
-                  <div class="marquee__group">
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=java" alt="Java" width="50" height="50" style="border-radius: 5px;" />
-                      <p>Java</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=py" alt="Python" width="50" height="50" style="border-radius: 5px;" />
-                      <p>Python</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=c" alt="C" width="50" height="50" style="border-radius: 5px;" />
-                      <p>C</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=php" alt="PHP" width="50" height="50" style="border-radius: 5px;" />
-                      <p>PHP</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=laravel" alt="Laravel" width="50" height="50" style="border-radius: 5px;" />
-                      <p>Laravel</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=flask" alt="Flask" width="50" height="50" style="border-radius: 5px;" />
-                      <p>Flask</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=django" alt="Django" width="50" height="50" style="border-radius: 5px;" />
-                      <p>Django</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=sqlite" alt="Sqlite" width="50" height="50" style="border-radius: 5px;" />
-                      <p>Sqlite</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=mysql" alt="Mysql" width="50" height="50" style="border-radius: 5px;" />
-                      <p>Mysql</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=html" alt="Html" width="50" height="50" style="border-radius: 5px;" />
-                      <p>Html</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=css" alt="CSS" width="50" height="50" style="border-radius: 5px;" />
-                      <p>CSS</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=js" alt="js" width="50" height="50" style="border-radius: 5px;" />
-                      <p>js</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=npm" alt="npm" width="50" height="50" style="border-radius: 5px;" />
-                      <p>npm</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap" width="50" height="50" style="border-radius: 5px;" />
-                      <p>Bootstrap</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=java" alt="Java" width="50" height="50" style="border-radius: 5px;" />
-                      <p>Java</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=py" alt="Python" width="50" height="50" style="border-radius: 5px;" />
-                      <p>Python</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=c" alt="C" width="50" height="50" style="border-radius: 5px;" />
-                      <p>C</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=php" alt="PHP" width="50" height="50" style="border-radius: 5px;" />
-                      <p>PHP</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=laravel" alt="Laravel" width="50" height="50" style="border-radius: 5px;" />
-                      <p>Laravel</p>
-                    </div>
-                  </div>
-
-                  
-                </div>
-
-                
-                <div class="marquee">
-                    <div class="marquee__group2">
-                      <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=java" alt="Java" width="50" height="50" style="border-radius: 5px;" />
-                      <p>Java</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=py" alt="Python" width="50" height="50" style="border-radius: 5px;" />
-                      <p>Python</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=c" alt="C" width="50" height="50" style="border-radius: 5px;" />
-                      <p>C</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=php" alt="PHP" width="50" height="50" style="border-radius: 5px;" />
-                      <p>PHP</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=laravel" alt="Laravel" width="50" height="50" style="border-radius: 5px;" />
-                      <p>Laravel</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=flask" alt="Flask" width="50" height="50" style="border-radius: 5px;" />
-                      <p>Flask</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=django" alt="Django" width="50" height="50" style="border-radius: 5px;" />
-                      <p>Django</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=sqlite" alt="Sqlite" width="50" height="50" style="border-radius: 5px;" />
-                      <p>Sqlite</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=mysql" alt="Mysql" width="50" height="50" style="border-radius: 5px;" />
-                      <p>Mysql</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=html" alt="Html" width="50" height="50" style="border-radius: 5px;" />
-                      <p>Html</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=css" alt="CSS" width="50" height="50" style="border-radius: 5px;" />
-                      <p>CSS</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=js" alt="js" width="50" height="50" style="border-radius: 5px;" />
-                      <p>js</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=npm" alt="npm" width="50" height="50" style="border-radius: 5px;" />
-                      <p>npm</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap" width="50" height="50" style="border-radius: 5px;" />
-                      <p>Bootstrap</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=java" alt="Java" width="50" height="50" style="border-radius: 5px;" />
-                      <p>Java</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=py" alt="Python" width="50" height="50" style="border-radius: 5px;" />
-                      <p>Python</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=c" alt="C" width="50" height="50" style="border-radius: 5px;" />
-                      <p>C</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=php" alt="PHP" width="50" height="50" style="border-radius: 5px;" />
-                      <p>PHP</p>
-                    </div>
-                    <div class="skill-card">
-                      <img src="https://skillicons.dev/icons?i=laravel" alt="Laravel" width="50" height="50" style="border-radius: 5px;" />
-                      <p>Laravel</p>
-                    </div>
-                    </div>
-  
-                    <!-- Duplicate the marquee__group for infinite effect -->
-                    
-                    
-                  </div>
-                  
-              </div>
-              
-            
-                 
-
-
-              <!--marquees-->
-
-            
-            
-               
-    
-    
-        </section>
             
             
         </main>
