@@ -1,3 +1,14 @@
+window.addEventListener("load", function () {
+  const preloader = document.getElementById("preloader");
+  preloader.style.transition = "opacity 0.5s";
+  preloader.style.opacity = 0;
+
+  setTimeout(() => {
+    preloader.style.display = "none";
+  }, 500); // Matches the opacity transition
+});
+
+
 function toggleReadMore() {
     const extraInfo = document.getElementById("extra-info");
     const readMoreLink = document.getElementById("read-more");
@@ -28,4 +39,5 @@ function tempclosePopup() {
     const modal = document.getElementById(modalId);
     modal.classList.toggle('hidden');
   }
+
 
