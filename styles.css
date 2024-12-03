@@ -94,7 +94,15 @@ background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(-
 background-size: 55px 55px;
 background-attachment: fixed;
 }
-
+.card-m {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(8px); /* Gaussian blur */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for definition */
+  border-radius: 16px; /* Rounded corners */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+}
 
 .button-container {
     text-align: center;

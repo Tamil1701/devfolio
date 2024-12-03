@@ -34,9 +34,9 @@
   <!-- temp pop up -->
   <div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-gray-900">
 <div class="flex flex-row gap-2">
-  <div class="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:.7s]"></div>
+  <div class="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:.10s]"></div>
   <div class="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:.3s]"></div>
-  <div class="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:.7s]"></div>
+  <div class="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:.10s]"></div>
 </div>
   </div>
     <div class="container1">
@@ -73,8 +73,8 @@
 
         <!-- Main git  -->
         <main class="content">
-          <section class=" py-16 hero">
-            <div class="max-w-4xl mx-auto text-left p-8">
+          <section class=" py-16 hero card-m">
+            <div class="max-w-4xl text-left p-6">
               <h1 class="text-5xl font-extrabold text-white leading-tight">
                 I am a <span class="text-blue-500">Software Engineer</span> <br> and <span class="text-blue-500">Consultant</span>
               </h1>
@@ -96,35 +96,57 @@
               <a href="#" id="read-more" onclick="toggleReadMore(); return false;">Read More</a>
               
             </div>
+            
+            
+
+            
             <div class="button-container">
-              <a href="docs/tamilarasan_s_tamilarasanselvam1701_gmail_com_Microsoft_intern.pdf" class="primary-button">ATS-Friendly Resume</a>
-              <a href="docs/Tamilarasan.S_21CS844 (2).pdf" class="primary-button">Normal Resume</a>
+              <button class="relative inline-block overflow-hidden rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:animate-background duration-300 group">
+                <div class="w-60 rounded-xl bg-gray-900 p-4 !pt-20 sm:p-6 text-white">
+                  <div class="flex items-center justify-center gap-2">
+                    <!-- New download icon -->
+                    <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v12m6-6l-6 6-6-6" />
+                    </svg>
+                    <span class="text-lg font-medium">Download Resume</span>
+                  </div>
+                </div>
+              
+                <!-- Tooltip -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 bottom-16 hidden group-hover:block text-sm font-medium text-white bg-gray-800 p-2 rounded-md shadow-lg transition duration-300 opacity-0 group-hover:opacity-100">
+                  Click to download your resume
+                </div>
+                
+                <!-- Hidden link to download the resume -->
+                <a href="docs/Tamilarasan.S_21CS844 (2).pdf" download="Resume.pdf" class="absolute inset-0 w-full h-full"></a>
+              </button>
+              
           </div>
           
             
           </section>
 
         <section>
-          <div class="grid grid-cols-1 mt-4 md:grid-cols-3 gap-4">
+          <div class="grid  grid-cols-1 mt-4 md:grid-cols-3 gap-4">
             <!-- Years of Experience -->
-            <div class="grid grid-cols-1 gap-4">
-              <div class="bento-g1 p-4 bg-opacity-75 rounded-lg shadow-md text-white">
+            <div class="grid  grid-cols-1 gap-4">
+              <div class="bento-g1 card-m p-4  rounded-lg  text-white">
                 <h2 class="text-lg font-bold">Years of Experience</h2>
-                <p class="text-2xl text-center font-semibold mt-2">2+</p>
+                <p class="text-6xl text-center font-semibold mt-2">2+</p>
               </div>
-              <div class="bento-g1 p-4 bg-opacity-75 rounded-lg shadow-md text-white">
-                <h2 class="text-lg font-bold">Years of Experience</h2>
-                <p class="text-2xl text-center font-semibold mt-2">2+</p>
+              <div class="bento-g1 card-m p-4 bg-opacity-75 rounded-lg shadow-md text-white center">
+                <h2 class="text-lg font-bold">Projects Delivered</h2>
+                <p class="text-6xl text-center font-semibold mt-2">6+</p>
               </div>
             </div>
           
             <!-- My Skills -->
-            <div class="bento-g1 p-4 bg-opacity-75 rounded-lg shadow-md text-white">
+            <div class="bento-g1 card-m p-4 bg-opacity-75 rounded-lg shadow-md text-white">
               <h2 class="text-lg font-bold mb-4">My Skills</h2>
               <p align="center">
                 <a href="#">
                   <img
-                    src="https://skillicons.dev/icons?i=bootstrap,css,django,figma,flask,html,java,js,linux,mysql,py,sklearn,sqlite,tailwind,vscode,wordpress&perline=4"
+                    src="https://skillicons.dev/icons?i=bootstrap,css,figma,html,java,linux,mysql,py,sqlite,tailwind,vscode,wordpress&perline=4"
                     alt="My Skills"
                     class="w-full"
                   />
@@ -136,7 +158,7 @@
             </div>
           
             <!-- Certifications Carousel -->
-            <div class="bento-g1 p-4 bg-opacity-75 rounded-lg shadow-md text-white">
+            <div class="bento-g1 card-m p-4 bg-opacity-75 rounded-lg shadow-md text-white">
               <h2 class="text-lg font-bold mb-4">Certifications</h2>
               <div class="scroll-container">
                 <div class="cert-item">
@@ -161,9 +183,9 @@
           </div>
           
           <!-- Second Row -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+          <div class="grid  grid-cols-1 md:grid-cols-2 gap-4 mt-4">
             <!-- Education -->
-            <div class="bento-g1 p-4 bg-opacity-75 rounded-lg shadow-md text-white">
+            <div class="bento-g1 card-m p-4 bg-opacity-75 rounded-lg shadow-md text-white">
               <h2 class="text-lg font-bold mb-4">Education</h2>
               <p>
                 <strong>B.E. in Computer Science</strong><br />
@@ -173,28 +195,27 @@
             </div>
           
             <!-- Projects -->
-            <div class="bento-g1 p-4 bg-opacity-75 rounded-lg shadow-md text-white">
+            <div class="card-m p-4 bg-opacity-75 rounded-lg shadow-md text-white">
               <h2 class="text-lg font-bold mb-4">Projects</h2>
               <ul class="list-disc ml-5">
                 <li>
                   Spam Detection System 
-                  <button onclick="alert('Details about Spam Detection System')" class="ml-2 px-2 py-1 bg-gray-700 text-white rounded hover:bg-gray-800">
-                    Show More
-                  </button>
+                
                 </li>
                 <li>
                   AR Smart Home Model 
-                  <button onclick="alert('Details about AR Smart Home Model')" class="ml-2 px-2 py-1 bg-gray-700 text-white rounded hover:bg-gray-800">
-                    Show More
-                  </button>
+                  
                 </li>
               </ul>
+              <button onclick="alert('view projects')" class="ml-2 px-2 py-1 bg-gray-700 text-white rounded hover:bg-gray-800">
+                Show More
+              </button>
             </div>
           </div>
           
           <!-- Popup Modal -->
-          <div id="skillsModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-            <div class="bento-g1 w-96 text-center p-6 rounded-lg shadow-lg">
+          <div id="skillsModal" class="hidden fixed inset-0 z-50 flex items-center justify-center card-m">
+            <div class="card-m w-96 text-center p-6 rounded-lg shadow-lg">
               <h2 class="text-lg font-bold mb-4">All Skills</h2>
               <p align="center">
                 <a href="#">
@@ -213,160 +234,59 @@
         </section>
 
         <section>
-          <div class="container mx-auto px-4 py-8 space-y-6">
-            <!-- Card 1 -->
-            <article
-              class="w-full bg-gray-700 shadow-lg p-6 rounded-md transform hover:scale-105 duration-300 relative"
-            >
-              <a
-                href="https://example.com/project1"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="absolute top-4 right-4 text-gray-300 hover:text-white"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M17.25 6.75L6.75 17.25M6.75 6.75h10.5v10.5"
-                  />
-                </svg>
-              </a>
-              <div class="flex items-center">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  class="w-12 h-12 text-gray-300 bg-gray-600 rounded-full p-2"
-                >
-                  <path
-                    d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 5.5a1.5 1.5 0 1 1-1.5 1.5A1.5 1.5 0 0 1 12 7.5Zm1 9h-2v-4h2Z"
-                    fill="currentColor"
-                  />
-                </svg>
-                <div class="ml-4">
-                  <h3 class="text-xl font-semibold text-gray-100">
-                    Vegro Ventures Pvt. Ltd.
-                  </h3>
-                  <p class="text-sm text-gray-400">May 2023 - August 2023 (4 months)</p>
-                </div>
-              </div>
-              <p class="text-gray-300 mt-2">
-                <span class="font-bold text-gray-100">Software Developer and Consultant:</span> 
-                Created scalable web solutions and managed digital marketing strategies to drive business growth.
-              </p>
-            </article>
-        
-            <!-- Card 2 -->
-            <article
-              class="w-full bg-gray-700 shadow-lg p-6 rounded-md transform hover:scale-105 duration-300 relative"
-            >
-              <a
-                href="https://example.com/project2"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="absolute top-4 right-4 text-gray-300 hover:text-white"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M17.25 6.75L6.75 17.25M6.75 6.75h10.5v10.5"
-                  />
-                </svg>
-              </a>
-              <div class="flex items-center">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  class="w-12 h-12 text-gray-300 bg-gray-600 rounded-full p-2"
-                >
-                  <path
-                    d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 5.5a1.5 1.5 0 1 1-1.5 1.5A1.5 1.5 0 0 1 12 7.5Zm1 9h-2v-4h2Z"
-                    fill="currentColor"
-                  />
-                </svg>
-                <div class="ml-4">
-                  <h3 class="text-xl font-semibold text-gray-100">
-                    Vegro VLearn
-                  </h3>
-                  <p class="text-sm text-gray-400">February 2024 - May 2024 (4 months)</p>
-                </div>
-              </div>
-              <p class="text-gray-300 mt-2">
-                <span class="font-bold text-gray-100">Platform Manager:</span> 
-                Managed and grew an edu-tech internship platform, onboarding 20+ students and evolving it into an internal training tool for strategic alignment.
-              </p>
-            </article>
-        
-            <!-- Card 3 -->
-            <article
-              class="w-full bg-gray-700 shadow-lg p-6 rounded-md transform hover:scale-105 duration-300 relative"
-            >
-              <a
-                href="https://example.com/project3"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="absolute top-4 right-4 text-gray-300 hover:text-white"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M17.25 6.75L6.75 17.25M6.75 6.75h10.5v10.5"
-                  />
-                </svg>
-              </a>
-              <div class="flex items-center">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  class="w-12 h-12 text-gray-300 bg-gray-600 rounded-full p-2"
-                >
-                  <path
-                    d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 5.5a1.5 1.5 0 1 1-1.5 1.5A1.5 1.5 0 0 1 12 7.5Zm1 9h-2v-4h2Z"
-                    fill="currentColor"
-                  />
-                </svg>
-                <div class="ml-4">
-                  <h3 class="text-xl font-semibold text-gray-100">
-                    Yuva Industries
-                  </h3>
-                  <p class="text-sm text-gray-400">August 2023 - October 2023 (3 months)</p>
-                </div>
-              </div>
-              <p class="text-gray-300 mt-2">
-                <span class="font-bold text-gray-100">Web Developer:</span> 
-                Developed and deployed dynamic web applications, ensuring quality and functionality for client satisfaction.
-              </p>
-            </article>
+          <div class="text-left mx-auto p-2 mt-4">
+            <h1 class="mb-4 text-6xl font-extrabold text-white leading-tight">
+              My <span class="text-blue-500">Journey</span> (Freelance).
+            </h1>
+            <p class="text-lg font-medium text-gray-400 ">
+              A collection of roles, responsibilities, and experiences that shaped my professional growth.
+            </p>
           </div>
+          
+          
+          
+          <div class=" experience mx-auto px-4 py-8 space-y-6">
+            <!-- Card 1 -->
+            
+            <!-- Card 2 -->
+            
+          </div>
+        </section>
+        <section>
+          <!-- Background layer -->
+          <div class="text-left mx-auto p-2 mt-4">
+            <h1 class="mb-4 text-6xl font-extrabold text-white leading-tight">
+              Things I've <span class="text-blue-500">Built</span>
+            </h1>
+            <p class="text-lg font-medium text-gray-400 ">
+              Explore the projects I've crafted with passion and purpose, reflecting my dedication to innovation.
+            </p>
+          </div>
+          <div class="container mx-auto p-6">
+            <!-- Grid Container -->
+            <div id="projectGrid" class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6"></div>
+            
+            <!-- Show More Button -->
+            <!-- Show More/Show Less Button -->
+            <div class="text-center mt-6">
+              <button id="toggleBtn" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+                Show More
+              </button>
+            </div>
+          </div>
+           
+
+        </section>
+        <section>
+          
+          
+          
+          
+          
+
+
+
+          
         </section>
         
         
