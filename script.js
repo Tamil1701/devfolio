@@ -54,8 +54,24 @@ function tempclosePopup() {
     { 
       title: "Spam Detection", 
       description: "Simple spam detection system developed to detect spam text by apploading text document or can be used as chrome extension", 
-      image: "https://via.placeholder.com/400x300", 
-      tech: ["Flask","AI"], 
+      image: "images/project/sd-proj.png", 
+      tech: ["Flask","AI","Web Technolagies"], 
+      link: "#"
+    }
+    ,
+    { 
+      title: "Code Executor", 
+      description: "A lightweight HTML code executor that runs directly within the browser, providing real-time output for HTML code. It can also be integrated as a WordPress plugin for seamless use in web development.", 
+      image: "images/project/ce-proj.png", 
+      tech: ["Javascript","Code Mirror","HTML","Tailwind CSS"], 
+      link: "#"
+    }
+    ,
+    { 
+      title: "LMS(Learning Management System)", 
+      description: "A custom-built LMS platform developed using WordPress, featuring tailored plugins and a uniquely designed theme to enhance functionality and user experience for online learning.", 
+      image: "images/project/vl-proj.png", 
+      tech: ["Javascript","Code Mirror","HTML","Tailwind CSS"], 
       link: "#"
     }
     
